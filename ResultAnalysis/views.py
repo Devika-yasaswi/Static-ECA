@@ -11,6 +11,8 @@ def home(request):
     return render(request, 'Home.html')
 def resultAnalysis(request):
     return render(request, 'Result Analysis.html')
+def seating(request):
+    return render(request,'seatinghome.html') 
 def process_regular_sgpa(request):
     if request.method == 'POST':
         # Get the uploaded file from the request
